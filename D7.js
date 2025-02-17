@@ -6,21 +6,17 @@
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
-const numbers = function (s1,s2,s3,s4,s5){
-console.log(s1)
-console.log(s2)
-console.log(s3)
-console.log(s4)
-console.log(s5)
+const numbers = function() {
+    return numbers.from({ length: 10 }, () => Math.floor(Math.random() * 101));
 }
-numbers("5","9","10", "100",)
-numbers("2","4","25","14","20")
-console.log("numbers")
-
+  console.log(numbers())
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
-
+const numPari = function (){
+  return numPari.filter( num >= % 2 === 0)
+}
+  console log("numPari")
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
